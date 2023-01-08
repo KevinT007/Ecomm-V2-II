@@ -1,10 +1,12 @@
 import React from "react";
 
-import { Products, Footer, HeroBanner } from "../components";
+import { Products, Footer, Slider } from "../components";
+import { client } from "../lib/client";
+
 const Home = () => {
   return (
     <div>
-      <HeroBanner />
+      <Slider />
       <div className="products-heading">
         <h2>Best Selling Games</h2>
         <p>New games</p>
@@ -16,5 +18,17 @@ const Home = () => {
     </div>
   );
 };
+
+// export const getServerSideProps = async () => {
+//   const query = '*[_type == "product"]';
+//   const products = await client.fetch(query);
+
+//   const bannerQuery = '*[_type == "banner"]';
+//   const bannerData = await client.fetch(bannerQuery);
+
+//   return {
+//     props: { products, bannerData },
+//   };
+// };
 
 export default Home;

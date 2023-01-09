@@ -1,4 +1,4 @@
 import product from './product'
-import banner from './banner'
+import product2 from './product2'
 
-export const schemaTypes = [product, banner]
+export const schemaTypes = [product, product2]

@@ -1,9 +1,8 @@
 import React from "react";
-
-import { Products, Footer, Slider, Products2 } from "../components";
+import { Products, Contact, Slider } from "../components";
 import { client } from "../lib/client";
 
-const Home = (products, products2) => {
+const Home = (products) => {
   return (
     <div>
       <Slider />
@@ -18,13 +17,9 @@ const Home = (products, products2) => {
         ))}
       </div>
       <div className="products-heading">
-        <h2>Now Selling Assessories</h2>
-        <p>New Gamer Gear</p>
-        <div className="products-container">
-          <Products2 key={products._id} product2={products} />
-        </div>
+        <h2>Assessories Coming Soon</h2>
       </div>
-      <Footer />
+      <Contact />
     </div>
   );
 };

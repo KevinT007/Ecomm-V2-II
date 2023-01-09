@@ -1,12 +1,12 @@
 import React from "react";
-import { Products, Contact, PlatformBanner } from "../components";
+import { Products, Contact, Slider } from "../components";
 import { client } from "../lib/client";
 
-const Home = (products, bannerData) => {
+const Home = (products) => {
   return (
     <div>
-      {/* <Slider /> */}
-      <PlatformBanner platformBanner={bannerData.length && bannerData[0]} />
+      <Slider />
+      {/* <PlatformBanner platformBanner={bannerData.length && bannerData[0]} /> */}
       <div className="products-heading">
         <h2>Best Selling Games</h2>
         <p>Hot Sale!</p>

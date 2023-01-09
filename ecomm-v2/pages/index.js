@@ -1,12 +1,12 @@
 import React from "react";
-import { Products, Contact, Slider } from "../components";
+import { Products, Contact, PlatformBanner } from "../components";
 import { client } from "../lib/client";
 
-const Home = (products) => {
+const Home = (products, bannerData) => {
   return (
     <div>
-      <Slider />
-
+      {/* <Slider /> */}
+      <PlatformBanner platformBanner={bannerData.length && bannerData[0]} />
       <div className="products-heading">
         <h2>Best Selling Games</h2>
         <p>Hot Sale!</p>
@@ -17,8 +17,9 @@ const Home = (products) => {
         ))}
       </div>
       <div className="products-heading">
-        <h2>Assessories Coming Soon</h2>
+        <h2>Accessories Coming Soon!</h2>
       </div>
+      <div className="products-container"></div>
       <Contact />
     </div>
   );

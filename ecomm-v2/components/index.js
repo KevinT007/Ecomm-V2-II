@@ -6,3 +6,5 @@ export { default as Contact } from "./Contact";
 export { default as Cart } from "./Cart";
 export { default as Slider } from "./Slider";
 export { default as Products2 } from "./Products2";
+export { default as Shop } from "./shop";
+export { default as PlatformBanner } from "./PlatformBanner";

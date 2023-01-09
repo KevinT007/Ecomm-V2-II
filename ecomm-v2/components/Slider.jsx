@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const Slider = ({ banner }) => {
+const Slider = (platformBanner) => {
   return (
     <div className="slider-container">
       <div>
@@ -16,8 +16,9 @@ const Slider = ({ banner }) => {
         <h3>Featured</h3>
         <h3>Games</h3>
         <h1>Have Fun!</h1>
-        <Link href={"./products"}>
-          <button type="button">Start</button>
+
+        <Link href={`/product/${platformBanner.product}`}>
+          <button type="button">Start{platformBanner.buttonText}</button>
         </Link>
         <div className="desc">
           <h5>Also Sale Assessories!</h5>

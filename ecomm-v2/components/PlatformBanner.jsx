@@ -17,8 +17,8 @@ const PlatformBanner = ({ platformBanner }) => {
         />
 
         <div>
-          <Link href={`/product/${platformBanner.product}`}>
-            <button type="button">{platformBanner.buttonText}</button>
+          <Link href={`/Shop/${platformBanner.product}`}>
+            <button type="button">Start</button>
           </Link>
           <div className="desc">
             <h5>Description</h5>

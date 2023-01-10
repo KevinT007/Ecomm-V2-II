@@ -19,6 +19,7 @@ const Home = (products) => {
       <div className="products-heading">
         <h2>Accessories Coming Soon!</h2>
       </div>
+
       <div className="products-container"></div>
       <Contact />
     </div>
@@ -29,11 +30,14 @@ export const getServerSideProps = async () => {
   const query = '*[_type == "product"]';
   const products = await client.fetch(query);
 
+  const accquery = '*[_type == "accessories"]';
+  const accessoriesData = await client.fetch(accquery);
+
   const bannerQuery = '*[_type == "banner"]';
   const bannerData = await client.fetch(bannerQuery);
 
   return {
-    props: { products, bannerData },
+    props: { products, bannerData, accessoriesData },
   };
 };
 

@@ -6,7 +6,7 @@ import { urlFor } from "../lib/client";
 const Products = ({ product: { image, name, slug, price } }) => {
   return (
     <div>
-      <Link href={`/shop/${slug.current}`}>
+      <Link href={`/Shop/${slug.current}`}>
         <div className="product-card">
           <img
             src={urlFor(image && image[0])}

@@ -19,7 +19,7 @@ const Slider = () => {
         <button type="button">Start</button>
 
         <div className="desc">
-          <h5>Also Sale Assessories!</h5>
+          <h5>Assessories Coming Soon!</h5>
         </div>
       </div>
     </div>

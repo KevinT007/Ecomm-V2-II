@@ -235,6 +235,7 @@ span.text-red {
 }
 
 .product-name {
+  color: #dcdcdc;
   font-weight: 500;
 }
 .product-price {
@@ -502,6 +503,7 @@ button {
   justify-content: center;
 }
 .footer-container .icons {
+  color: #dcdcdc;
   font-size: 30px;
   display: flex;
   gap: 10px;
@@ -816,7 +818,6 @@ button {
 .product-max-qty {
   margin-top: 10px;
 }
-
 @media screen and (max-width: 1150px) {
   .crossfade > figure {
     max-width: 50vw;

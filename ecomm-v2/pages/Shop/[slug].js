@@ -3,12 +3,10 @@ import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
 import { client, urlFor } from "../../lib/client";
 import { Product } from "../../components";
-import { useStateContext } from "../../context/StateContext";
 
 const ProductDetails = ({ product, products }) => {
   const { image, name, details, price } = product;
   const [index, setIndex] = useState(0);
-  const { qty, onAdd, setShowCart } = useStateContext();
 
   const handleBuyNow = () => {
     onAdd(product, qty);

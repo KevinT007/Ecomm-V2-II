@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import {
   AiFillInstagram,
   AiOutlineTwitter,
@@ -15,7 +16,9 @@ const Footer = () => {
         Gamer Hub All rights reserverd
       </p>
       <p className="icons">
-        <AiFillInstagram />
+        <a href="www.instagram.com">
+          <AiFillInstagram />
+        </a>
         <AiOutlineTwitter />
         <AiFillGithub />
         <AiFillYoutube />
